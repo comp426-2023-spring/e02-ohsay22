@@ -1,6 +1,7 @@
 //// Load most basic dependencies
 // Create require function 
 // https://nodejs.org/docs/latest-v18.x/api/module.html#modulecreaterequirefilename
+import {rpsls, rps} from './lib/rpsls.js';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 // The above two lines allow us to use ES methods and CJS methods for loading
