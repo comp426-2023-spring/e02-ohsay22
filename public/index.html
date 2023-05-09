@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>The Universal Game</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./scripts.js" defer></script>
-  </head>
-  <body>
-    <form id="game_form">
-      <h3>Pick Your Poison:</h3>
-      <label>
-        <input type="radio" name="game" value="RPS">
-        Play Rock, Paper, Scissors?
-      </label><br>
-      <label>
-        <input type="radio" name="game" value="RPSLS">
-        Play Rock, Paper, Scissors, Lizard, Spock?
-      </label><br><br>
-      <h3>Select Rival:</h3>
-      <label>
-        <input type="radio" name="opponent" value="random">
-        Play against the computer (random draw)
-      </label><br>
-      <label>
-        <input type="radio" name="opponent" value="human">
-        Play against a friend
-      </label><br><br>
-      <h3>What's Your Move?:</h3>
-      <label>
-        <input type="radio" name="choice" value="rock">
-        Rock
-      </label><br>
-      <label>
-        <input type="radio" name="choice" value="paper">
-        Paper
-      </label><br>
-      <label>
-        <input type="radio" name="choice" value="scissors">
-        Scissors
-      </label><br>
-      <label>
-        <input type="radio" name="choice" value="lizard">
-        Lizard
-      </label><br>
-      <label>
-        <input type="radio" name="choice" value="spock">
-        Spock
-      </label><br><br>
-      <button type="reset">Reset</button>
-      <button type="submit">Play</button>
-    </form>
-    <div id="results">
-      <div id="results-text"></div>
-      <button type="button" id="reset_button">Start Over</button>
-    </div>
-    <div id="buttons" class="active">
-        <button id="play" type="submit" name="control_option" onclick="play()">Play</button>
-        <button id="start_over" type="submit" name="control_option" onclick="startOver()">Reset</button>
-        <br><br>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>The Universal Game</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./scripts.js" defer></script>
+</head>
+<body>
+  <form id="game_form">
+    <h3>Pick Your Poison:</h3>
+    <label>
+      <input type="radio" name="game" value="RPS">
+      Play Rock, Paper, Scissors?
+    </label><br>
+    <label>
+      <input type="radio" name="game" value="RPSLS">
+      Play Rock, Paper, Scissors, Lizard, Spock?
+    </label><br><br>
+    <h3>Select Rival:</h3>
+    <label>
+      <input type="radio" name="opponent" value="random">
+      Play against the computer (random draw)
+    </label><br>
+    <label>
+      <input type="radio" name="opponent" value="human">
+      Play against a friend
+    </label><br><br>
+    <h3>What's Your Move?:</h3>
+    <label>
+      <input type="radio" name="choice" value="rock">
+      Rock
+    </label><br>
+    <label>
+      <input type="radio" name="choice" value="paper">
+      Paper
+    </label><br>
+    <label>
+      <input type="radio" name="choice" value="scissors">
+      Scissors
+    </label><br>
+    <label>
+      <input type="radio" name="choice" value="lizard">
+      Lizard
+    </label><br>
+    <label>
+      <input type="radio" name="choice" value="spock">
+      Spock
+    </label><br><br>
+    <button type="reset">Reset</button>
+    <button type="submit">Play</button>
+  </form>
+  <div id="results">
+    <div id="results-text"></div>
+    <button type="button" id="reset_button">Start Over</button>
+  </div>
+</body>
 </html>
+
